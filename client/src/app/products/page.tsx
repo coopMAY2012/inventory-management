@@ -1,10 +1,10 @@
 "use client";
 
-import { useCreateProductMutation, useGetProductsQuery } from "@/app/state/api";
+import { useCreateProductMutation, useGetProductsQuery } from "@/state/api";
 import { PlusCircleIcon, SearchIcon } from "lucide-react";
 import { useState } from "react";
-import Header from "../(component)/Header";
-import Rating from "../(component)/Rating";
+import Header from "@/app/(components)/Header";
+import Rating from "@/app/(components)/Rating";
 import CreateProductModal from "./CreateProductModal";
 import Image from "next/image";
 
@@ -80,7 +80,7 @@ const Products = () => {
               className="border shadow rounded-md p-4 max-w-full w-full mx-auto"
             >
               <div className="flex flex-col items-center">
-                <div>image</div>
+                <div>Logo</div>
                 <h3 className="text-lg text-gray-900 font-semibold">
                   {product.name}
                 </h3>

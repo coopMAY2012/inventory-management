@@ -3,9 +3,9 @@
 import {
   ExpenseByCategorySummary,
   useGetExpensesByCategoryQuery,
-} from "@/app/state/api";
+} from "@/state/api";
 import { useMemo, useState } from "react";
-import Header from "../(component)/Header";
+import Header from "../(components)/Header";
 import {
   Cell,
   Legend,
